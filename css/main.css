@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-header {
+  padding: 20px 18px 70px;
+  
+  text-align: center;
+  background: #202346 url("../img/headerBg320.jpg");
+  background-size: cover;
+}
+
+.logo__icon {
+  width: 134px;
+  margin-bottom: 128px;
+  margin-left: -8px;
+}
+
+.logo__icon path {
+  fill: none;
+  stroke: #fff;
+}
+
+.logo__icon > path {
+  fill: #fff;
+}
+
+
+.main-header__slogan {
+  margin-bottom: 85px;
+  
+  color: #fff;
+}
+
+.slogan__first-line,
+.slogan__second-line {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  text-align: left;
+  text-transform: uppercase;  
+  line-height: 1.2;
+  letter-spacing: 1.5px;
+  font-size: 2.8rem;
+}
+
+.slogan__second-line {
+  margin-left: 45px;
+  margin-top: 18px;
+}
+
+.download-btn {
+  position: relative;
+  
+  width: 280px;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  padding: 2px 0 4px;
+  
+  background: #5e42b0;
+}
+
+.download-btns__btn-text-wrapper {
+  position: relative;
+  left: 30px;
+  
+  display: inline-block;
+  width: 68%;
+  
+  text-transform: uppercase;
+}
+
+.download-btns__btn-icon-wrapper {
+  position: relative;
+  right: -50px;
+  
+  display: inline-block;
+  width: 27%;
+}
+
+.download-btns__ios__icon {
+  width: 33%;
+  fill: #fff;
+}
+
+.download-btns__android__icon {
+  width: 30%;
+  fill: #fff;
+}
+
+.download-btns__text-fisrt-line {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  color: #fff;
+  text-align: left;
+}
+
+.download-btns__text-second-line {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  color: #fff;
+  text-align: left
+}
+
+
+
+.athlets {
+  background: #fff url("../img/footballer.png") no-repeat;
+  background-position: center 12%;
+}
+
+.athlets__title {
+  padding: 7px 17px;
+  margin-bottom: 260px; 
+  
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: #e7e7e7;
+  text-transform: uppercase;
+  font-size: 5.1rem;
+}
+
+.athlets__stages-group {
+
+}
+
+.athlets__stage {
+  padding: 30px 17px 55px;
+}
+
+.athlets__stage:nth-child(2) {
+  background: #f5f4f9;
+}
+
+.athlets__stage:nth-child(3) {
+  background: #5e42b0;
+  color: #fff;
+}
+
+.stage__title-wrapper {
+  position: relative;
+}
+
+.stage__number {
+  position: absolute;
+  top: 10px;
+  
+  border-bottom: 3px solid #5e42b0;
+  
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.athlets__stage:nth-child(3) .stage__number {
+  border-bottom-color: #fff;
+}
+
+.stage__title {
+  position: relative;
+  left: 2.7rem;
+  
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: #c1c1c1;
+  text-transform: uppercase;
+  font-size: 3.1rem;
+}
+
+.stage__text {
+  margin-top: 15px;
+  
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.3;
+}
+
+
+
+.players {
+  background: #fff url("../img/player.png") no-repeat;
+  background-position: center 12%;
+}
+
+.players__title {
+  padding: 7px 17px;
+  margin-bottom: 255px; 
+  
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: #e7e7e7;
+  text-transform: uppercase;
+  font-size: 5.1rem;
+}
+
+.players__stage {
+  padding: 35px 17px 55px;
+}
+
+.players__stage:nth-child(2) {
+  background: #f5f4f9;
+}
+
+.players__stage:nth-child(3) {
+  background: #090c35;
+  color: #fff;
+}
+
+.players__stage:nth-child(3) .stage__number {
+  border-bottom-color: #fff;
+  color: #684fb3;
+}
