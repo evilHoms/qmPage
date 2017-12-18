@@ -472,6 +472,11 @@
     font-size: 8vw;
   }
   
+  .main-header__download-btns {
+    display: flex;
+    justify-content: center;
+  }
+  
   .download-btn {
     position: relative;
 
@@ -733,6 +738,11 @@
     margin-top: 0;
     margin-right: 8%;
     font-size: 4.5vw;
+  }
+  
+  .main-header__download-btns {
+    display: flex;
+    justify-content: center;
   }
   
   .download-btn {
