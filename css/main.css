@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+.content {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 .main-header {
   padding: 35px 20px 70px;
   
@@ -780,11 +785,11 @@
   .download-btns__text-fisrt-line {
     margin-top: 0;
 
-    font-size: 0.75vw;
+    font-size: 0.68vw;
   }
 
   .download-btns__text-second-line {
-    font-size: 0.75vw;
+    font-size: 0.68vw;
   }
   
   .athlets {
@@ -800,7 +805,7 @@
     top: 0;
     bottom: 5%;
     left: 15%;
-    
+    z-index: 2;
     
     content: "";
     width: 40%;
@@ -842,7 +847,7 @@
     content: "";
     width: 55%;
     overflow: hidden;
-    
+    z-index: 2;
     background: url("../img/player768.png") no-repeat;
     background-size: contain;
   }
@@ -996,5 +1001,89 @@
 
 
 @media (min-width: 1921px) {
+  .slogan__first-line {
+    font-size: 8vh;
+  }
   
+  .slogan__second-line {
+    font-size: 8vh;
+  }
+  
+  .text__title {
+    font-size: 9vh;
+  }
+  
+  .players {
+    overflow: hidden;
+  }
+  
+  .players__stage:nth-child(2) {
+    position: relative;
+    z-index: 1;
+  }
+
+  .players__stage:nth-child(3) {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .players__stage:nth-child(2)::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: -20vw;
+    left: -20vw;
+    z-index: -1;
+        
+    background: #f5f4f9;
+  }
+
+  .players__stage:nth-child(3)::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: -20vw;
+    left: -20vw;
+    z-index: -1;
+    background: #090c35;
+  } 
+  
+  .athlets {
+    overflow: hidden;
+  }
+  
+  .athlets__stage:nth-child(2) {
+    position: relative;
+    z-index: 1;
+  }
+
+  .athlets__stage:nth-child(3) {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .athlets__stage:nth-child(2)::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: -20vw;
+    left: -20vw;
+    z-index: -1;
+        
+    background: #f5f4f9;
+  }
+
+  .athlets__stage:nth-child(3)::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: -20vw;
+    left: -20vw;
+    z-index: -1;
+    background: #5e42b0;
+  } 
 }
