@@ -60,16 +60,6 @@
   transition: 0.3s;
 }
 
-.download-btn:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
-
-.download-btn:active {
-  transform: scale(1.2);
-  cursor: pointer;
-}
-
 .download-btns__btn-text-wrapper {
   position: relative;
   left: 30px;
@@ -772,6 +762,16 @@
     min-height: 8%;
 
     background: #5e42b0;
+  }
+   
+  .download-btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  .download-btn:active {
+    transform: scale(1.2);
+    cursor: pointer;
   }
   
   .download-btns__btn-text-wrapper {
