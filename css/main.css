@@ -5,16 +5,13 @@
 }
 
 .main-header {
-  padding: 20px 18px 70px;
+  padding: 35px 20px 70px;
   
   text-align: center;
-  background: #202346 url("../img/headerBg320.jpg");
-  background-size: cover;
+  background: #202346;
 }
 
 .logo__icon {
-  width: 134px;
-  margin-bottom: 128px;
   margin-left: -8px;
 }
 
@@ -29,8 +26,6 @@
 
 
 .main-header__slogan {
-  margin-bottom: 85px;
-  
   color: #fff;
 }
 
@@ -40,13 +35,10 @@
   font-weight: bold;
   text-align: left;
   text-transform: uppercase;  
-  line-height: 1.2;
-  letter-spacing: 1.5px;
-  font-size: 2.8rem;
+  line-height: 1.1;
 }
 
 .slogan__second-line {
-  margin-left: 45px;
   margin-top: 18px;
 }
 
@@ -91,11 +83,9 @@
 }
 
 .download-btns__text-fisrt-line {
-  margin-top: 5px;
   margin-bottom: 0px;
   
   font-family: 'Open Sans', sans-serif;
-  font-size: 0.8rem;
   letter-spacing: 0.5px;
   color: #fff;
   text-align: left;
@@ -107,36 +97,20 @@
   
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
-  font-size: 0.8rem;
   letter-spacing: 0.5px;
   color: #fff;
   text-align: left
 }
 
-
-
-.athlets {
-  background: #fff url("../img/footballer.png") no-repeat;
-  background-position: center 12%;
-}
-
 .athlets__title {
-  padding: 7px 17px;
-  margin-bottom: 260px; 
-  
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   color: #e7e7e7;
   text-transform: uppercase;
-  font-size: 5.1rem;
 }
 
 .athlets__stages-group {
 
-}
-
-.athlets__stage {
-  padding: 30px 17px 55px;
 }
 
 .athlets__stage:nth-child(2) {
@@ -146,6 +120,7 @@
 .athlets__stage:nth-child(3) {
   background: #5e42b0;
   color: #fff;
+  padding-bottom: 40px;
 }
 
 .stage__title-wrapper {
@@ -154,13 +129,11 @@
 
 .stage__number {
   position: absolute;
-  top: 10px;
   
   border-bottom: 3px solid #5e42b0;
   
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
-  font-size: 1.5rem;
   color: #000;
 }
 
@@ -170,43 +143,26 @@
 
 .stage__title {
   position: relative;
-  left: 2.7rem;
+  padding-left: 2.7rem;
   
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   color: #c1c1c1;
   text-transform: uppercase;
-  font-size: 3.1rem;
 }
 
 .stage__text {
   margin-top: 15px;
+  padding-left: 5px;
   
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.6rem;
-  line-height: 1.3;
-}
-
-
-
-.players {
-  background: #fff url("../img/player.png") no-repeat;
-  background-position: center 12%;
 }
 
 .players__title {
-  padding: 7px 17px;
-  margin-bottom: 255px; 
-  
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   color: #e7e7e7;
   text-transform: uppercase;
-  font-size: 5.1rem;
-}
-
-.players__stage {
-  padding: 35px 17px 55px;
 }
 
 .players__stage:nth-child(2) {
@@ -221,4 +177,814 @@
 .players__stage:nth-child(3) .stage__number {
   border-bottom-color: #fff;
   color: #684fb3;
+}
+
+.advice__image-be-active,
+.advice__image-find-contact,
+.advice__image-work-it {
+  position: relative;
+  -webkit-background-size: cover;
+  background-size: cover;  
+}
+
+.advice__number-wrapper {
+  position: absolute;
+  
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  
+  background: #5e42b0;
+}
+
+.advice__number {
+  border-bottom: 3px solid #8f7bc8;
+}
+
+.text__title { 
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: #e7e7e7;
+  text-transform: uppercase;
+}
+
+.text__content {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+.main-footer {
+  text-align: center;
+}
+
+.logo-only-icon__icon {
+  stroke: #fff;
+  fill: none;
+  fill-rule: evenodd;
+  stroke-linecap: round; 
+  stroke-linejoin: round;
+  
+  background: #6a4bc2;
+}
+
+.download-text__first-line {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.download-text__second-line {
+  font-family: 'Open Sans', sans-serif;
+  color: #9b8ec1;
+  text-transform: uppercase;
+}
+
+
+
+@media (max-width: 640px) {
+  html {
+    font-size: 62.5%;
+  }
+  
+  .main-header {
+    background: url("../img/headerBg320.jpg");
+    background-size: cover;
+  }
+  
+  .main-header__logo {
+    margin-bottom: 128px;
+  }
+
+  .logo__icon {
+    width: 134px;
+    margin-left: -8px;
+  }
+  
+  .main-header__slogan {
+    margin-bottom: 85px;
+  }
+  
+  .download-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .download-btns__text-fisrt-line {
+    margin-top: 5px;
+
+    font-size: 0.8rem;
+  }
+
+  .download-btns__text-second-line {
+    font-size: 0.8rem;
+  }
+  
+  .slogan__first-line,
+  .slogan__second-line {
+    letter-spacing: 0.14rem;
+    font-size: 8.8vw;
+  }
+  
+  .slogan__second-line {
+    margin-left: 15%;
+  }
+  
+  .athlets {
+    background: #fff url("../img/footballer320.png") no-repeat;
+    background-size: 60%;
+    background-position: 55% 25vw;
+  }
+  
+  .athlets__title {
+    padding: 3% 6%;
+    margin-bottom: 80vw; 
+    font-size: 16vw;
+  }
+  
+  .athlets__stage {
+    padding: 12% 17px 54px;
+  }
+
+  .players__title {
+    padding: 3% 6%;
+    margin-bottom: 80vw; 
+    font-size: 16vw;
+  }
+  
+  .players__stage:nth-child(2) {
+    padding-bottom: 40px;
+  }
+  
+  .players {
+    background: #fff url("../img/player320.png") no-repeat;
+    background-size: 95%;
+    background-position: 10% 25vw;
+  }
+
+  .players__stage {
+    padding: 12% 17px 18%;
+  }
+  
+  .stage__title {
+    font-size: 2.9rem;
+  }
+
+  .stage__text {
+    font-size: 1.55rem;
+    line-height: 1.2;
+    letter-spacing: 0.7px;
+  }
+  
+  .stage__number {
+    font-size: 1.4rem;
+    bottom: 10px;
+  }
+  
+  .advice__image-be-active,
+  .advice__image-find-contact,
+  .advice__image-work-it { 
+    min-height: 110vw;
+  }
+  
+  
+  .advice__image-be-active {
+    background: #000 url("../img/beActive320.jpg");
+    background-size: cover;
+  }
+
+  .advice__image-find-contact {
+    background: #000 url("../img/findContact320.jpg");
+    background-size: cover;
+  }
+
+  .advice__image-work-it {
+    background: #000 url("../img/workIt320.jpg");
+    background-size: cover;
+  }
+  
+  .advice__number-wrapper {
+    bottom: -10px;
+    left: 20px;
+
+    padding: 23px 26px;
+
+    font-size: 1.5rem;
+  }
+
+  .advice__number {
+    border-bottom-width: 3px;
+  }
+  
+  .advice__text {
+    padding: 20px;
+    margin-bottom: 55px;
+    padding-right: 40px;
+  }
+
+  .text__title { 
+    font-size: 3.1rem;
+  }
+  
+  .text__content {
+    margin-top: 15px;
+
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+  
+  .main-footer {
+    padding: 95px 18px 10px;
+
+    background: #202346 url("../img/footerBg320.jpg");
+    background-size: cover;
+  }
+  
+  .main-footer__logo-only-icon {
+    margin-bottom: 45px;
+  }
+  
+  .logo-only-icon__icon {
+    padding: 10px;
+    width: 25%;
+    border-radius: 13px;
+  }
+  
+  .main-footer__download-text {
+    margin-bottom: 73px;
+  }
+
+  .download-text__first-line {
+    font-size: 3.4rem;
+  }
+
+  .download-text__second-line {
+    font-size: 1.5rem;
+  }
+
+  .main-footer__logo {
+    margin-top: 70px; 
+  }
+}
+
+
+
+@media (min-width: 641px) and (max-width: 960px) {
+  html {
+    font-size: 80%;
+  }
+  
+  .main-header {
+    background: url("../img/headerBg768.jpg");
+    background-size: cover;
+    padding-top: 2%;
+  }
+  
+  .main-header__logo {
+    margin-bottom: 23%;
+  }
+
+  .logo__icon {
+    width: 200px;
+    margin-top: 20px;
+    margin-left: -8px;
+  }
+  
+  .main-header__slogan {
+    margin-bottom: 43%;
+  }
+  
+  .slogan__first-line,
+  .slogan__second-line {
+    letter-spacing: 0.6vw;
+  }
+  
+  .slogan__first-line {
+    margin-left: 8.5%;
+    font-size: 8vw;
+  }
+  
+  .slogan__second-line {
+    margin-left: 23%;
+    font-size: 8vw;
+  }
+  
+  .download-btn {
+    position: relative;
+
+    width: 310px;
+    border: none;
+    border-radius: 40px;
+    margin: 0 20px 15px;
+    padding: 16px 0;
+
+    background: #5e42b0;
+  }
+  
+  .download-btns__btn-text-wrapper {
+    left: 30px;
+    top: -5px;
+
+    width: 68%;
+  }
+
+  .download-btns__btn-icon-wrapper {
+    right: -20px;
+  }
+
+  .download-btns__ios__icon {
+    width: 53%;
+  }
+
+  .download-btns__android__icon {
+    width: 50%;
+  }
+  
+  .download-btns__text-fisrt-line {
+    margin-top: 0;
+
+    font-size: 1.1rem;
+  }
+
+  .download-btns__text-second-line {
+    font-size: 1.1rem;
+  }
+  
+  .athlets {
+    position: relative;
+    
+    padding-top: 60px;
+    
+    background: #fff;
+    background-position: center left;
+  }
+  
+  .athlets::after {
+    position: absolute;
+    top: 10%;
+    bottom: 0;
+    
+    content: "";
+    width: 40%;
+    
+    background: url("../img/footballer768.png") no-repeat;
+    background-size: cover;
+    background-position: 80% center;
+  }
+
+  .athlets__title {
+    padding-left: 38%; 
+    font-size: 6.3rem;
+  }
+  
+  .athlets__stage {
+    padding: 24px 17px 54px 38%;
+  }
+  
+  .players {
+    position: relative;
+    
+    padding-top: 60px;
+    
+    background: #fff;
+    background-position: center left;
+  }
+  
+  .players::after {
+    position: absolute;
+    top: 6%;
+    bottom: 24%;
+    right: 0;
+    
+    content: "";
+    width: 55%;
+    
+    background: url("../img/player768.png") no-repeat;
+    background-size: cover;
+  }
+  
+  .players__title {
+    padding-left: 30px; 
+    font-size: 6.3rem;
+  }
+  
+  .players__stage {
+    padding: 30px 45% 54px 17px;
+    padding-right: 45%;
+  }
+  
+  .stage__title {
+    font-size: 2.6rem;
+  }
+
+  .stage__text {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+  }
+  
+  .stage__number {
+    font-size: 1.5rem;
+    bottom: 10px;
+  }
+  
+  .advice__image-be-active,
+  .advice__image-find-contact,
+  .advice__image-work-it { 
+    min-height: 580px;
+  }
+  
+  
+  .advice__image-be-active {
+    background: #000 url("../img/beActive768.jpg");
+    background-size: cover;
+  }
+
+  .advice__image-find-contact {
+    background: #000 url("../img/findContact768.jpg");
+    background-size: cover;
+  }
+
+  .advice__image-work-it {
+    background: #000 url("../img/workIt768.jpg");
+    background-size: cover;
+  }
+  
+  .advice__number-wrapper {
+    bottom: -40px;
+    left: 30px;
+
+    padding: 38px 45px;
+
+    font-size: 1.9rem;
+  }
+
+  .advice__number {
+    border-bottom-width: 5px;
+  }
+  
+  .advice__text {
+    padding: 20px;
+    margin-bottom: 75px;
+    padding-right: 40px;
+  }
+
+  .text__title { 
+    padding: 50px 7px;
+    font-size: 6.4rem;
+  }
+  
+  .text__content {
+    margin-top: -45px;
+    margin-left: 10px;
+
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  
+  .main-footer {
+    padding: 125px 18px 10px;
+
+    background: #202346 url("../img/footerBg768.jpg");
+    background-size: cover;
+  }
+  
+  .main-footer__logo-only-icon {
+    margin-bottom: 50px;
+  }
+  
+  .logo-only-icon__icon {
+    padding: 20px 13px;
+    width: 18%;
+    border-radius: 30px;
+  }
+  
+  .main-footer__download-text {
+    margin-bottom: 260px;
+  }
+
+  .download-text__first-line {
+    font-size: 6.7rem;
+  }
+
+  .download-text__second-line {
+    font-size: 2.8rem;
+  }
+
+  .main-footer__logo {
+    margin-top: 25px; 
+  }
+}
+
+
+
+@media (min-width: 961px)  {
+  html {
+    font-size: 62.5%;
+  }
+  
+  .main-header {
+    position: relative;
+    background-color: rgba(10, 14, 51, 0.85);
+    padding-bottom: 6%;
+    padding-top: 2.5%;
+  }
+  
+  .bg-desctop {
+    position: absolute;
+    top: 0; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: url("../img/headerBgDesctop.jpg");
+    background-size: cover;
+  }
+  
+  .main-header__logo {
+    margin-bottom: 15%;
+  }
+
+  .logo__icon {
+    width: 10%;
+    margin-top: 0px;
+    margin-left: -12px;
+  }
+  
+  .main-header__slogan {
+    margin-bottom: 10%;
+  }
+  
+  .slogan__first-line,
+  .slogan__second-line {
+    letter-spacing: 0.3vw;
+  }
+  
+  .slogan__first-line {
+    margin-left: 8%;
+    font-size: 4.6vw;
+  }
+  
+  .slogan__second-line {
+    text-align: right;
+    margin-top: 0;
+    margin-right: 8%;
+    font-size: 4.5vw;
+  }
+  
+  .download-btn {
+    position: relative;
+
+    width: 16%;
+    border: none;
+    border-radius: 40px;
+    margin: 0 20px;
+    padding: 0.9% 0;
+    min-height: 8%;
+
+    background: #5e42b0;
+  }
+  
+  .download-btns__btn-text-wrapper {
+    left: 8%;
+    top: -3px;
+
+    width: 68%;
+  }
+
+  .download-btns__btn-icon-wrapper {
+    right: -10%;
+  }
+
+  .download-btns__ios__icon {
+    width: 60%;
+  }
+
+  .download-btns__android__icon {
+    width: 56%;
+  }
+  
+  .download-btns__text-fisrt-line {
+    margin-top: 0;
+
+    font-size: 0.75vw;
+  }
+
+  .download-btns__text-second-line {
+    font-size: 0.75vw;
+  }
+  
+  .athlets {
+    position: relative;
+    
+    padding-top: 5%;
+    
+    background: #fff;
+  }
+  
+  .athlets::after {
+    position: absolute;
+    top: 0;
+    bottom: 5%;
+    left: 15%;
+    
+    
+    content: "";
+    width: 40%;
+    
+    background: url("../img/footballer768.png") no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .athlets__title {
+    padding-left: 52.5%; 
+    font-size: 4.4vw;
+  }
+  
+  .athlets__stage {
+    padding: 2% 10% 3% 52.5%;
+  }
+  
+  .athlets__stage:nth-child(3) {
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
+  
+  .players {
+    position: relative;
+    
+    padding-top: 53px;
+    
+    background: #fff;
+    background-position: center left;
+  }
+  
+  .players::after {
+    position: absolute;
+    top: 0;
+    bottom: 15%;
+    right: 0;
+    
+    content: "";
+    width: 55%;
+    overflow: hidden;
+    
+    background: url("../img/player768.png") no-repeat;
+    background-size: contain;
+  }
+  
+  .players__title {
+    padding-left: 17%; 
+    font-size: 4.4vw;
+  }
+  
+  .players__stage {
+    padding: 3% 45% 4% 17%;
+  }
+  
+  .stage__title {
+    font-size: 2vw;
+    letter-spacing: 0.6px;
+    padding-left: 2vw;
+  }
+
+  .stage__text {
+    font-size: 1.1vw;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    margin-top: 2%;
+    padding-left: 0;
+  }
+  
+  .stage__number {
+    font-size: 1.1vw;
+    bottom: 20%;
+  }
+  
+  .advice {
+    display: flex;
+  }
+  
+  .advice:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+  
+  .advice__image-be-active,
+  .advice__image-find-contact,
+  .advice__image-work-it { 
+    width: 50%;
+  }
+  
+  
+  .advice__image-be-active {
+    background: #000 url("../img/beActiveDesctop.jpg");
+    background-size: cover;
+  }
+
+  .advice__image-find-contact {
+    background: #000 url("../img/findContactDesctop.jpg");
+    background-size: cover;
+  }
+
+  .advice__image-work-it {
+    background: #000 url("../img/workItDesctop.jpg");
+    background-size: cover;
+  }
+  
+  .advice__number-wrapper {
+    top: 27%;
+    right: -9%;
+
+    padding: 6.8% 7.5%;
+
+    font-size: 1.2vw;
+  }
+
+  .advice__number {
+    border-bottom-width: 5%;
+  }
+  
+  .advice:nth-child(2) .advice__number-wrapper {
+    right: auto;
+    left: -9%;
+  }
+  
+  .advice__text {
+    width: 50%;
+    padding: 8% 0 10% 5.5%;
+    margin-bottom: 3%;
+  }
+
+  .text__title { 
+    padding: 8% 0 18%;
+    font-size: 4.2vw;
+  }
+  
+  .text__content {
+    padding-right: 30%;
+    margin-top: -35px;
+    margin-left: 10px;
+
+    font-size: 1.35vw;
+    line-height: 1.1;
+  }
+  
+  .main-footer {
+    padding: 12% 18px 2%;
+    
+    position: relative;
+    background-color: rgba(10, 14, 51, 0.85);
+    background-size: cover;
+  }
+  
+  .main-footer .bg-desctop {
+    background: #202346 url("../img/footerBgDesctop.jpg");
+    background-size: cover;
+  }
+  
+  .main-footer__icon-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .main-footer__logo-only-icon {
+    margin-bottom: 50px;
+  }
+  
+  .logo-only-icon__icon {
+    padding: 6% 5%;
+    width: 45%;
+    border-radius: 23%;
+    margin-left: -150px;
+  }
+  
+  .main-footer__download-text {
+    margin-bottom: 80px;
+  }
+
+  .download-text__first-line {
+    margin-left: -110px;
+    font-size: 4.3rem;
+    letter-spacing: 1.7px;
+  }
+
+  .download-text__second-line {
+    font-size: 1.6rem;
+    margin-left: -195px;
+    margin-top: -6px;
+  }
+
+  .main-footer__logo {
+    margin-top: 13%; 
+  }
+}
+
+
+
+@media (min-width: 1921px) {
+  
 }
