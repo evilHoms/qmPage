@@ -57,6 +57,17 @@
   padding: 2px 0 4px;
   
   background: #5e42b0;
+  transition: 0.3s;
+}
+
+.download-btn:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.download-btn:active {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 .download-btns__btn-text-wrapper {
@@ -1086,4 +1097,15 @@
     z-index: -1;
     background: #5e42b0;
   } 
+  
+/*
+  .athlets::after {
+    background-size: 80%;
+  }
+  
+  .players::after {
+    background-size: 80%;
+    background-position: 0 25%;
+  }
+*/
 }
