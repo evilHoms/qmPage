@@ -10,10 +10,20 @@
 }
 
 .main-header {
+  position: relative;
   padding: 35px 20px 70px;
-  
   text-align: center;
-  background: #202346;
+  background-color: rgba(10, 14, 51, 0.85);
+}
+
+.bg-header,
+.bg-footer {
+  position: absolute;
+  top: 0; 
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
 }
 
 .logo__icon {
@@ -47,57 +57,55 @@
   margin-top: 18px;
 }
 
+
 .download-btn {
-  position: relative;
-  
-  width: 280px;
+  display: flex;
+  justify-content: center;
+  width: 32vmin;
+  height: 8vmin;
   border: none;
-  border-radius: 20px;
-  margin-bottom: 15px;
-  padding: 2px 0 4px;
-  
+  border-radius: 3.5vmin;
+  margin: 0 1.1vmax 0 1.5vmax;
+  padding: 0.7% 1% 1%;
+  min-height: 8%;
+  outline: none;
+
   background: #5e42b0;
   transition: 0.3s;
 }
 
 .download-btns__btn-text-wrapper {
-  position: relative;
-  left: 30px;
-  
-  display: inline-block;
-  width: 68%;
-  
   text-transform: uppercase;
-}
-
-.download-btns__btn-icon-wrapper {
-  position: relative;
-  right: -50px;
-  
-  display: inline-block;
-  width: 27%;
+  margin-top: 3.5%;
+  width: 51%;
 }
 
 .download-btns__ios__icon {
-  width: 33%;
+  width: 18%;
+  margin-left: -10%;
+  margin-right: 10%;
   fill: #fff;
 }
 
 .download-btns__android__icon {
-  width: 30%;
+  width: 18%;
+  margin-right: 10%;
+  margin-left: 5%;
   fill: #fff;
 }
 
 .download-btns__text-fisrt-line {
-  margin-bottom: 0px;
+  display: block;
   
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 0.5px;
   color: #fff;
   text-align: left;
+  font-size: 1.3vmin;
 }
 
 .download-btns__text-second-line {
+  display: block;
   margin-top: 0px;
   margin-bottom: 0px;
   
@@ -105,7 +113,8 @@
   font-weight: bold;
   letter-spacing: 0.5px;
   color: #fff;
-  text-align: left
+  text-align: left;
+  font-size: 1.5vmin;
 }
 
 .athlets__title {
@@ -220,11 +229,10 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-
-
-
 .main-footer {
+  position: relative;
   text-align: center;
+  background-color: rgba(10, 14, 51, 0.85);
 }
 
 .logo-only-icon__icon {
@@ -258,7 +266,11 @@
   }
   
   .main-header {
-    background: url("../img/headerBg320.jpg");
+    padding-bottom: 72px;
+  }
+  
+  .bg-header {
+    background-image: url('../img/football_767.jpg');
     background-size: cover;
   }
   
@@ -276,48 +288,36 @@
   }
   
   .download-btn {
-    position: relative;
-
-    width: 85vw;
+    width: 86vw;
     height: 11vw;
-    border: none;
-    border-radius: 40px;
-    margin: 0 2vw;
-    padding: 0.9% 0;
-    min-height: 8%;
-    outline: none;
-    
-    margin-bottom: 15px;
-
-    background: #5e42b0;
-  }
-  
-  .download-btns__btn-icon-wrapper {
-    position: absolute;
-    right: 47vw;
-    top: 0;
-    bottom: 0;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-bottom: 12px;
+    border-radius: 20px;
+    padding-left: 20%;
+    padding-top: 0;
+    margin-left: 0;
   }
   
   .download-btns__btn-text-wrapper {
-    padding-left: 20vw;
-    margin-left: -60px;
+    margin-top: 1px;
   }
   
   .download-btns__text-fisrt-line {
-    display: block;
-    margin-top: 5px;
-
     font-size: 2.5vw;
   }
 
   .download-btns__text-second-line {
-    display: block;
-    font-size: 2.5vw;
+    font-size: 2.7vw;
+  }
+  
+  .download-btns__ios__icon {
+    margin-right: 5px;
+    width: 11%;
+  }
+  
+  .download-btns__android__icon {
+    margin-right: 5px;
+    width: 11%;
+    margin-left: -20px;
   }
   
   .slogan__first-line,
@@ -328,15 +328,25 @@
   
   .slogan__second-line {
     margin-left: 15%;
+    line-height: 1.2;
   }
   
-  .athlets {
-    background: #fff url("../img/footballer320.png") no-repeat;
-    background-size: 60%;
-    background-position: 55% 25vw;
+  .athlets__title::after {
+    position: absolute;
+    top: 98%;
+    bottom: -86vw;
+    left: 18%;
+    right: 14%;
+    
+    content: "";
+    
+    background: url("../img/footballer320.png") no-repeat;
+    background-size: contain;
+    background-position: center 0;
   }
   
   .athlets__title {
+    position: relative;
     padding: 3% 6%;
     margin-bottom: 80vw; 
     font-size: 16vw;
@@ -349,29 +359,34 @@
   .athlets__stage:nth-child(3) {
     padding: 15% 17px 36px;
   }
-
+  
   .players__title {
+    position: relative;
+    margin-bottom: 75vw;
     padding: 3% 6%;
-    margin-bottom: 80vw; 
     font-size: 16vw;
   }
   
-  .players__stage:nth-child(2) {
-    padding-bottom: 40px;
-  }
-  
-  .players {
-    background: #fff url("../img/player320.png") no-repeat;
-    background-size: 95%;
-    background-position: 10% 25vw;
+  .players__title::after {
+    position: absolute;
+    top: 98%;
+    bottom: -86vw;
+    left: 1%;
+    right: 4%;
+    
+    content: "";
+    
+    background: url("../img/player320.png") no-repeat;
+    background-size: contain;
+    background-position: center 0;
   }
 
   .players__stage {
-    padding: 10% 17px 10%;
+    padding: 15% 10px 16% 17px;
   }
   
-  .players__stage:nth-child(3) {
-    padding: 10% 17px 18%;
+  .player__hidden-text {
+    display: none;
   }
   
   .stage__title {
@@ -387,6 +402,7 @@
   .stage__number {
     font-size: 1.4rem;
     bottom: 10px;
+    left: 4px;
   }
   
   .advice__image-be-active,
@@ -425,6 +441,7 @@
   }
 
   .text__title { 
+    margin-top: -2px;
     font-size: 3.1rem;
   }
   
@@ -437,8 +454,10 @@
   
   .main-footer {
     padding: 95px 18px 10px;
-
-    background: #202346 url("../img/footerBg320.jpg");
+  }
+  
+  .bg-footer {
+    background-image: url('../img/game_767.jpg');
     background-size: cover;
   }
   
@@ -465,7 +484,7 @@
   }
 
   .main-footer__logo {
-    margin-top: 70px; 
+    margin-top: 80px; 
   }
 }
 
@@ -477,10 +496,13 @@
   }
   
   .main-header {
-    background: url("../img/headerBg768.jpg");
-    background-size: cover;
     padding-top: 2%;
     padding-bottom: 12%;
+  }
+  
+  .bg-header {
+    background-image: url('../img/football_1280.jpg');
+    background-size: cover;
   }
   
   .main-header__logo {
@@ -518,53 +540,26 @@
   }
   
   .download-btn {
-    position: relative;
-
     width: 40vw;
     height: 10vw;
-    border: none;
-    border-radius: 40px;
-    margin: 0 2vw;
-    padding: 0.9% 0;
-    min-height: 8%;
-    outline: none;
-
-    background: #5e42b0;
+    border-radius: 5vw;
   }
   
-  .download-btns__btn-icon-wrapper {
-    position: absolute;
-    left: 10%;
-    top: 0;
-    bottom: 0;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .download-btns__btn-text-wrapper {
-    padding-left: 13%
-  }
-
   .download-btns__ios__icon {
-    width: 53%;
+    width: 16%;
   }
 
   .download-btns__android__icon {
-    width: 50%;
+    width: 16%;
   }
-  
-  .download-btns__text-fisrt-line {
-    display: block;
-    margin-top: 0;
 
+  .download-btns__text-fisrt-line {
     font-size: 1.8vw;
+    margin-top: -0.9vw;
   }
 
   .download-btns__text-second-line {
-    display: block;
-    font-size: 1.9vw;
+    font-size: 2vw;
   }
   
   .athlets {
@@ -649,11 +644,13 @@
     font-size: 1.4rem;
     line-height: 1.5;
     letter-spacing: 0.3px;
+    margin-left: -5px;
   }
   
   .stage__number {
     font-size: 1.5rem;
-    bottom: 10px;
+    bottom: 12px;
+    left: 2px;
   }
   
   .advice__image-be-active,
@@ -682,23 +679,33 @@
     padding-right: 40px;
   }
 
+  .advice:nth-child(1) .text__title { 
+    padding: 40px 7px 10px;
+    font-size: 11vw;
+  }
+  
   .text__title { 
-    padding: 40px 7px;
+    padding: 30px 7px 5px;
     font-size: 11vw;
   }
   
   .text__content {
-    margin-top: -25px;
     margin-left: 10px;
+    padding-bottom: 10px;
 
     font-size: 2rem;
     line-height: 1.2;
   }
   
   .main-footer {
+    margin-top: 75px;
     padding: 125px 18px 10px;
 
-    background: #202346 url("../img/footerBg768.jpg");
+    background-color: rgba(10, 14, 51, 0.85);
+  }
+  
+  .bg-footer {
+    background-image: url('../img/game_1280.jpg');
     background-size: cover;
   }
   
@@ -713,7 +720,7 @@
   }
   
   .main-footer__download-text {
-    margin-bottom: 260px;
+    margin-bottom: 270px;
   }
 
   .download-text__first-line {
@@ -743,14 +750,8 @@
     padding-top: 2.35%;
   }
   
-  .bg-desctop {
-    position: absolute;
-    top: 0; 
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    background: url("../img/headerBgDesctop.jpg");
+  .bg-header {
+    background: url("../img/football_1920.jpg");
     background-size: cover;
   }
   
@@ -791,21 +792,6 @@
     display: flex;
     justify-content: center;
   }
-  
-  .download-btn {
-    position: relative;
-
-    width: 32vh;
-    height: 8vh;
-    border: none;
-    border-radius: 40px;
-    margin: 0 1.6vw;
-    padding: 0.9% 0;
-    min-height: 8%;
-    outline: none;
-
-    background: #5e42b0;
-  }
    
   .download-btn:hover {
     box-shadow: 0 0 3px 3px white;
@@ -815,41 +801,6 @@
   .download-btn:active {
     transform: translateY(3px);
     cursor: pointer;
-  }
-  
-  .download-btns__btn-text-wrapper {
-    padding-left: 13%;
-  }
-
-  .download-btns__btn-icon-wrapper {
-    position: absolute;
-    left: 10%;
-    top: 0;
-    bottom: 0;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .download-btns__ios__icon {
-    width: 60%;
-  }
-
-  .download-btns__android__icon {
-    width: 56%;
-  }
-  
-  .download-btns__text-fisrt-line {
-    display: block;
-    margin-top: 0;
-
-    font-size: 1.3vh;
-  }
-
-  .download-btns__text-second-line {
-    display: block;
-    font-size: 1.5vh;
   }
   
   .athlets {
@@ -881,7 +832,7 @@
   }
   
   .athlets__stage {
-    padding: 2.8% 10% 2.4% 52.5%;
+    padding: 2.8% 10% 2.4% 53%;
   }
   
   .athlets__stage:nth-child(3) {
@@ -910,6 +861,7 @@
     z-index: 2;
     background: url("../img/player768.png") no-repeat;
     background-size: contain;
+    background-position: 5px -30px;
   }
   
   .players__title {
@@ -929,7 +881,7 @@
   .stage__title {
     font-size: 2vw;
     letter-spacing: 0.6px;
-    padding-left: 2vw;
+    padding-left: 1.5vw;
   }
 
   .stage__text {
@@ -943,7 +895,7 @@
   .stage__number {
     font-size: 0.95vw;
     top: 18%; 
-    left: 1%;
+    left: 0%;
   }
   
   .advice {
@@ -958,23 +910,23 @@
   .advice__image-find-contact,
   .advice__image-work-it { 
     width: 50%;
+    overflow: hidden;
   }
   
   
   .advice__image-be-active img,
   .advice__image-find-contact img,
   .advice__image-work-it img {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
   }
   
   .advice__number-wrapper {
-    top: 27%;
-    left: -9%;
+    top: 28%;
+    left: -8%;
 
-    padding: 6.8% 7.5%;
+    padding: 6.5% 7.5%;
 
-    font-size: 1.2vw;
+    font-size: 1.25vw;
   }
 
   .advice__number {
@@ -989,7 +941,6 @@
   .advice__text {
     width: 50%;
     padding: 8.5% 0 0 6.5%;
-    margin-bottom: 0;
   }
 
   .advice:nth-child(even) .advice__text {
@@ -1015,20 +966,24 @@
     padding-right: 40%;
   }
     
-  .advice:nth-child(odd) .text__content {
+  .advice:nth-child(1) .text__content {
     padding-right: 50%;
+  }
+  
+  .advice:nth-child(3) .text__content {
+    padding-right: 30%;
   }
   
   .main-footer {
     padding: 11% 18px 2%;
+    margin-top: -2px;
     
     position: relative;
     background-color: rgba(10, 14, 51, 0.85);
-    background-size: cover;
   }
   
-  .main-footer .bg-desctop {
-    background: #202346 url("../img/footerBgDesctop.jpg");
+  .bg-footer {
+    background: #202346 url("../img/game_1920.jpg");
     background-size: cover;
   }
   
@@ -1041,12 +996,12 @@
   .main-footer__logo-only-icon {
     position: absolute;
     top: 3%;
-    left: 25%;
+    left: 26%;
   }
   
   .logo-only-icon__icon {
-    padding: 1vw 1vw;
-    width: 7.5vw;
+    padding: 1.1vw 1vw;
+    width: 7.3vw;
     border-radius: 23%;
   }
   
@@ -1083,7 +1038,7 @@
   }
   
   .text__title {
-    font-size: 9vh;
+    font-size: 8vh;
   }
   
   .players {
