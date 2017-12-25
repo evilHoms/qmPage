@@ -16,6 +16,10 @@
   background-color: rgba(10, 14, 51, 0.85);
 }
 
+.hidden-title {
+  display: none;
+}
+
 .bg-header,
 .bg-footer {
   position: absolute;
@@ -266,7 +270,7 @@
   }
   
   .main-header {
-    padding-bottom: 72px;
+    padding-bottom: 80px;
   }
   
   .bg-header {
@@ -284,18 +288,21 @@
   }
   
   .main-header__slogan {
-    margin-bottom: 85px;
+    margin-bottom: 88px;
   }
-  
+
   .download-btn {
     width: 86vw;
     height: 11vw;
-    margin-bottom: 12px;
     border-radius: 20px;
     padding-left: 20%;
     padding-top: 0;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .download-btn:not(:last-child) {
+    margin-bottom: 12px;
   }
   
   .download-btns__btn-text-wrapper {
@@ -303,22 +310,24 @@
   }
   
   .download-btns__text-fisrt-line {
-    font-size: 2.5vw;
+    font-size: 2.4vw;
   }
 
   .download-btns__text-second-line {
-    font-size: 2.7vw;
+    font-size: 2.6vw;
   }
   
   .download-btns__ios__icon {
-    margin-right: 5px;
+    margin-right: 10px;
+    margin-left: -30px;
+    margin-top: -1px;
     width: 11%;
   }
   
   .download-btns__android__icon {
-    margin-right: 5px;
+    margin-right: 10px;
+    margin-left: -30px;
     width: 11%;
-    margin-left: -20px;
   }
   
   .slogan__first-line,
@@ -454,7 +463,7 @@
   }
   
   .main-footer {
-    padding: 95px 18px 10px;
+    padding: 100px 18px 10px;
   }
   
   .bg-footer {
@@ -462,18 +471,18 @@
     background-size: cover;
   }
   
+  .main-footer__icon-wrapper {
+    margin-bottom: 71px;
+  }
+
   .main-footer__logo-only-icon {
     margin-bottom: 45px;
   }
   
   .logo-only-icon__icon {
-    padding: 15px 10px;
+    padding: 14px 10px;
     width: 25%;
     border-radius: 13px;
-  }
-  
-  .main-footer__download-text {
-    margin-bottom: 73px;
   }
 
   .download-text__first-line {
@@ -484,8 +493,8 @@
     font-size: 1.5rem;
   }
 
-  .main-footer__logo {
-    margin-top: 80px; 
+  .main-footer .download-btns {
+    margin-bottom: 85px; 
   }
 }
 
@@ -535,7 +544,7 @@
     font-size: 8vw;
   }
   
-  .main-header__download-btns {
+  .download-btns {
     display: flex;
     justify-content: center;
   }
@@ -789,7 +798,7 @@
     letter-spacing: 0.36vw;
   }
   
-  .main-header__download-btns {
+  .download-btns {
     display: flex;
     justify-content: center;
   }
