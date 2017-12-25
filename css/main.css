@@ -550,8 +550,9 @@
   }
   
   .download-btn {
-    width: 40vw;
+    width: 41vw;
     height: 10vw;
+    padding-left: 2%;
     border-radius: 5vw;
   }
   
@@ -565,11 +566,13 @@
 
   .download-btns__text-fisrt-line {
     font-size: 1.8vw;
-    margin-top: -0.9vw;
+    margin-top: -0.7vw;
+    margin-left: -7px;
   }
 
   .download-btns__text-second-line {
     font-size: 2vw;
+    margin-left: -7px;
   }
   
   .athlets {
@@ -631,15 +634,15 @@
   }
   
   .players__stage:nth-child(1) {
-    padding: 20px 45% 44px 3.5%;
+    padding: 20px 45% 44px 3.8%;
   }
   
   .players__stage:nth-child(2) {
-    padding: 57px 45% 65px 3.5%;
+    padding: 57px 45% 65px 3.8%;
   }
   
   .players__stage:nth-child(3) {
-    padding: 47px 45% 45px 3.5%;
+    padding: 47px 45% 45px 3.8%;
   }
   
   .player__hidden-text {
@@ -671,7 +674,7 @@
   }
   
   .advice__number-wrapper {
-    top: -30%;
+    top: -90px;
     left: 30px;
 
     padding: 38px 45px;
@@ -719,6 +722,10 @@
     background-size: cover;
   }
   
+  .main-footer__icon-wrapper {
+    margin-bottom: 275px;
+  }
+
   .main-footer__logo-only-icon {
     margin-bottom: 50px;
   }
@@ -728,10 +735,6 @@
     width: 18%;
     border-radius: 30px;
   }
-  
-  .main-footer__download-text {
-    margin-bottom: 270px;
-  }
 
   .download-text__first-line {
     font-size: 11vw;
@@ -739,6 +742,7 @@
 
   .download-text__second-line {
     font-size: 4.8vw;
+    margin-top: -8px;
   }
 
   .main-footer__logo {
